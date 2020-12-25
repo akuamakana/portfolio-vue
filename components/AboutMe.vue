@@ -1,8 +1,7 @@
 <template>
   <div class="flex w-screen justify-center pt-8 bg-gray-100">
     <div class="grid grid-cols-3 grid-flow-col gap-x-4 w-1/2 my-10">
-      <div class="w-full h-full rounded-md col-span-1" />
-      <div class="col-span-2">
+      <div class="col-span-3">
         <h1 class="text-lg">
           About Me
         </h1>
