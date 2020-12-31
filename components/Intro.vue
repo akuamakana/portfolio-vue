@@ -9,21 +9,21 @@
         <p
           v-if="isRendered"
           :key="1"
-          class="transform rotate-180 border rounded border-green-400 px-2 py-5 my-8"
+          class="cursor-pointer transform rotate-180 border rounded border-green-400 px-2 py-5 my-8"
         >
           LinkedIn
         </p>
         <p
           v-if="isRendered"
           :key="2"
-          class="transform rotate-180 border rounded border-green-400 px-2 py-5 my-8"
+          class="cursor-pointer transform rotate-180 border rounded border-green-400 px-2 py-5 my-8"
         >
           Github
         </p>
         <p
           v-if="isRendered"
           :key="3"
-          class="transform rotate-180 border rounded border-green-400 px-2 py-5 mb-8 mt-24"
+          class="cursor-pointer transform rotate-180 border rounded border-green-400 px-2 py-5 mb-8 mt-24"
         >
           Email
         </p>
@@ -33,7 +33,7 @@
         appear
         xyz="fade delay-25"
       >
-        <div class="flex flex-col col-start-2 ml-32 col-span-5">
+        <div class="flex flex-col col-start-2 ml-32 col-span-4">
           <h1 class="header leading-none">
             I'm <span class="text-green-400">
               Kion Kaimi
@@ -42,6 +42,14 @@
           <h3 class="text-xl text-gray-600">
             Web Developer // Software Engineer
           </h3>
+          <div class="mt-24 pt-24">
+            <p class="leading-relaxed mb-6 text-lg text-gray-600">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet modi ea excepturi eum? Ipsam atque enim vel, consectetur ipsum ipsa obcaecati. Modi natus nulla voluptatibus, in est facilis molestiae iure optio vel quidem quisquam mollitia magnam fugiat assumenda aliquam eum, molestias minima ipsum iusto! Quae ut tempore labore! Suscipit ipsum dignissimos veniam omnis nulla inventore laborum ex repudiandae eos modi, voluptatibus provident et esse dolore necessitatibus doloribus animi dolores quod atque quo cum! Nisi nesciunt aperiam, odio rem incidunt voluptate!
+            </p>
+            <button class="text-xl bg-green-400 rounded-lg py-3 text-white px-10 cursor-pointer">
+              Download CV
+            </button>
+          </div>
         </div>
       </XyzTransition>
       <svg

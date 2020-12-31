@@ -4,9 +4,10 @@
       <Navbar />
       <Intro />
       <Portfolio />
-      <AboutMe />
+      <!-- <AboutMe /> -->
       <Resume />
       <ContactMe />
+      <div class="h-64" />
     </div>
   </div>
 </template>

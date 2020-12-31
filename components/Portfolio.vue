@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-screen justify-center my-8">
-    <div class="w-1/2">
+    <div class="w-3/4">
       <div>
         <h1 class="text-lg">
           My Portfolio

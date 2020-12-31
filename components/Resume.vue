@@ -1,6 +1,6 @@
 <template>
   <div class="w-screen flex justify-center py-8">
-    <div class="w-1/2">
+    <div class="w-3/4">
       <div>
         <h1 class="text-lg">
           My Resume

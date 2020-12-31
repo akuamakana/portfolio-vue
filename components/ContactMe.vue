@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col w-screen justify-center items-center py-8">
-    <div class="w-1/2">
+    <div class="w-3/4">
       <div class="self-start">
         <h1 class="text-lg">
           Contact Me
