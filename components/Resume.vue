@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen flex justify-center bg-gray-100 py-8">
+  <div class="w-screen flex justify-center py-8">
     <div class="w-1/2">
       <div>
         <h1 class="text-lg">
