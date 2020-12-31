@@ -1,10 +1,9 @@
 <template>
   <div class="w-screen flex justify-center items-center">
-    <div class="h-screen w-screen grid grid-cols-6 grid-rows-2 pt-20">
-      <!-- <div class="col-span-1 social flex flex-row-reverse items-center justify-end"> -->
+    <div class="h-screen w-screen flex flex-col px-4 lg:grid lg:grid-cols-6 grid-rows-2 lg:pt-20">
       <XyzTransitionGroup
-        xyz="fade left-5 ease-out-back stagger delay-10"
-        class="col-span-1 col-start-1 social flex flex-row-reverse items-start justify-end"
+        xyz="fade ease-out-back left-5 stagger delay-10"
+        class="col-span-1 col-start-1 social hidden lg:flex flex-row-reverse items-start justify-end"
       >
         <p
           v-if="isRendered"
@@ -28,21 +27,49 @@
           Email
         </p>
       </XyzTransitionGroup>
-      <!-- </div> -->
       <XyzTransition
         appear
         xyz="fade delay-25"
+        class=""
       >
-        <div class="flex flex-col col-start-2 ml-32 col-span-4">
-          <h1 class="header leading-none">
-            I'm <span class="text-green-400">
-              Kion Kaimi
-            </span>
-          </h1>
-          <h3 class="text-xl text-gray-600">
-            Web Developer // Software Engineer
-          </h3>
-          <div class="mt-24 pt-24">
+        <div class="flex flex-col lg:col-start-2 lg:ml-32 col-span-4">
+          <div>
+            <h1 class="lg:header mobile-header leading-none">
+              I'm <span class="text-green-400">
+                Kion Kaimi
+              </span>
+            </h1>
+            <h3 class="text-xl text-gray-600">
+              Web Developer // Software Engineer
+            </h3>
+          </div>
+          <XyzTransitionGroup
+            xyz="fade ease-out-back left-5 stagger delay-10"
+            class="grid grid-cols-3 gap-6 lg:hidden"
+          >
+            <p
+              v-if="isRendered"
+              :key="1"
+              class="cursor-pointer border rounded border-green-400 py-2 mt-8 mb-20 text-center"
+            >
+              LinkedIn
+            </p>
+            <p
+              v-if="isRendered"
+              :key="2"
+              class="cursor-pointer border rounded border-green-400 py-2 mt-8 mb-20 text-center"
+            >
+              Github
+            </p>
+            <p
+              v-if="isRendered"
+              :key="3"
+              class="cursor-pointer border rounded border-green-400 py-2 mt-8 mb-20 text-center"
+            >
+              Email
+            </p>
+          </XyzTransitionGroup>
+          <div class="lg:mt-24 lg:pt-24">
             <p class="leading-relaxed mb-6 text-lg text-gray-600">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet modi ea excepturi eum? Ipsam atque enim vel, consectetur ipsum ipsa obcaecati. Modi natus nulla voluptatibus, in est facilis molestiae iure optio vel quidem quisquam mollitia magnam fugiat assumenda aliquam eum, molestias minima ipsum iusto! Quae ut tempore labore! Suscipit ipsum dignissimos veniam omnis nulla inventore laborum ex repudiandae eos modi, voluptatibus provident et esse dolore necessitatibus doloribus animi dolores quod atque quo cum! Nisi nesciunt aperiam, odio rem incidunt voluptate!
             </p>
@@ -73,7 +100,9 @@
 </template>
 
 <script>
+import { hideAt } from 'vue-breakpoints';
 export default {
+  components: hideAt,
   data () {
     return {
       isRendered: false
@@ -92,6 +121,9 @@ export default {
   }
   .header {
     font-size: 6rem;
+  }
+  .mobile-header {
+    font-size: 5rem;
   }
 
 </style>

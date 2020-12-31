@@ -1,14 +1,11 @@
 <template>
   <div class="container w-screen">
-    <div>
-      <Navbar />
-      <Intro />
-      <Portfolio />
-      <!-- <AboutMe /> -->
-      <Resume />
-      <ContactMe />
-      <div class="h-64" />
-    </div>
+    <navbar />
+    <intro />
+    <portfolio />
+    <!-- <AboutMe /> -->
+    <resume />
+    <contact-me />
   </div>
 </template>
 

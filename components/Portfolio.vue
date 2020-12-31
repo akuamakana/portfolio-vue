@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-screen justify-center my-8">
-    <div class="w-3/4">
+    <div class="lg:w-3/4 flex-auto px-4 lg:flex-none lg:p-0">
       <div>
         <h1 class="text-lg">
           My Portfolio
@@ -9,7 +9,7 @@
           My Recent Work
         </h3>
       </div>
-      <div class="grid grid-cols-2 grid-rows-2 gap-8 my-8">
+      <div class="grid lg:grid-cols-2 grid-rows-2 gap-8 my-8">
         <PortfolioCard />
         <PortfolioCard />
         <PortfolioCard />

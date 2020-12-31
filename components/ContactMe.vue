@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col w-screen justify-center items-center py-8">
-    <div class="w-3/4">
-      <div class="self-start">
+  <div class="flex flex-col w-screen justify-center lg:items-center py-8">
+    <div class="lg:w-3/4 flex-auto px-4 lg:flex-none lg:p-0">
+      <div class="lg:self-start">
         <h1 class="text-lg">
           Contact Me
         </h1>
@@ -9,15 +9,15 @@
           Get In Touch
         </h3>
       </div>
-      <div class="grid grid-cols-4 gap-8">
+      <div class="grid lg:grid-cols-4 gap-8">
         <div class="p-8 shadow-lg col-span-3">
-          <ContactMeForm />
+          <contact-me-form />
         </div>
-        <div class="grid grid-rows-4 gap-8 col-span-1">
-          <ContactCard />
-          <ContactCard />
-          <ContactCard />
-          <ContactCard />
+        <div class="lg:flex flex-row hidden lg:grid lg:grid-rows-4 gap-8 lg:col-span-1">
+          <contact-card />
+          <contact-card />
+          <contact-card />
+          <contact-card />
         </div>
       </div>
     </div>

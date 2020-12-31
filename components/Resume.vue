@@ -1,6 +1,6 @@
 <template>
   <div class="w-screen flex justify-center py-8">
-    <div class="w-3/4">
+    <div class="lg:w-3/4 flex-auto px-4 lg:flex-none lg:p-0">
       <div>
         <h1 class="text-lg">
           My Resume
@@ -9,7 +9,7 @@
           My Work History
         </h3>
       </div>
-      <div class="grid grid-rows-2 grid-cols-2 gap-8 my-8">
+      <div class="grid grid-rows-2 lg:grid-cols-2 gap-8 my-8">
         <ResumeCard
           v-for="job in resume"
           :key="job.title"

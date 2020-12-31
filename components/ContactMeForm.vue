@@ -1,7 +1,6 @@
 <template>
   <form
-    class="flex flex-col"
-    action=""
+    class="flex flex-col flex-auto"
   >
     <input
       class="my-4 p-2 border-gray-200 border-2 rounded-lg"
@@ -24,7 +23,7 @@
       style="resize: none"
     />
     <button
-      class="bg-green-400 p-3 rounded-lg mt-4 focus:ring-0"
+      class="bg-green-400 p-3 rounded-lg mt-4 text-white focus:ring-0"
       type="button"
     >
       Send Message
