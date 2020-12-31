@@ -44,7 +44,7 @@
             </h3>
           </div>
           <XyzTransitionGroup
-            xyz="fade ease-out-back left-5 stagger delay-10"
+            xyz="fade ease-out-back left-5 stagger"
             class="grid grid-cols-3 gap-6 lg:hidden"
           >
             <p
