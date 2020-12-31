@@ -29,7 +29,7 @@
       </XyzTransitionGroup>
       <XyzTransition
         appear
-        xyz="fade delay-25"
+        xyz="fade"
         class=""
       >
         <div class="flex flex-col lg:col-start-2 lg:ml-32 col-span-4">
@@ -44,27 +44,27 @@
             </h3>
           </div>
           <XyzTransitionGroup
-            xyz="fade ease-out-back left-5 stagger"
-            class="grid grid-cols-3 gap-6 lg:hidden"
+            xyz="fade ease-out-back up-5 stagger delay-5"
+            class="grid grid-cols-3 gap-6 lg:hidden mb-12"
           >
             <p
               v-if="isRendered"
               :key="1"
-              class="cursor-pointer border rounded border-green-400 py-2 mt-8 mb-20 text-center"
+              class="cursor-pointer border rounded border-green-400 py-2 mt-8 text-center"
             >
               LinkedIn
             </p>
             <p
               v-if="isRendered"
               :key="2"
-              class="cursor-pointer border rounded border-green-400 py-2 mt-8 mb-20 text-center"
+              class="cursor-pointer border rounded border-green-400 py-2 mt-8 text-center"
             >
               Github
             </p>
             <p
               v-if="isRendered"
               :key="3"
-              class="cursor-pointer border rounded border-green-400 py-2 mt-8 mb-20 text-center"
+              class="cursor-pointer border rounded border-green-400 py-2 mt-8 text-center"
             >
               Email
             </p>
