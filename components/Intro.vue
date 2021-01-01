@@ -1,31 +1,37 @@
 <template>
   <div class="w-screen flex justify-center items-center">
-    <div class="h-screen w-screen flex flex-col px-4 lg:grid lg:grid-cols-6 grid-rows-2 lg:pt-20">
+    <div class="h-screen w-screen flex flex-col px-4 lg:px-0 lg:grid lg:grid-cols-6 grid-rows-2 lg:pt-20">
       <XyzTransitionGroup
         xyz="fade ease-out-back left-5 stagger delay-10"
         class="col-span-1 col-start-1 social hidden lg:flex flex-row-reverse items-start justify-end"
       >
-        <p
+        <a
           v-if="isRendered"
           :key="1"
-          class="cursor-pointer transform rotate-180 border rounded border-green-400 px-2 py-5 my-8"
+          target="_blank"
+          href="https://www.linkedin.com/in/kion-kaimi/"
+          class="cursor-pointer transform rotate-180 border rounded text-green-400 hover:bg-green-400 hover:text-white border-green-400 px-2 py-5 my-8"
         >
           LinkedIn
-        </p>
-        <p
+        </a>
+        <a
           v-if="isRendered"
           :key="2"
-          class="cursor-pointer transform rotate-180 border rounded border-green-400 px-2 py-5 my-8"
+          target="_blank"
+          href="https://github.com/akuamakana/"
+          class="cursor-pointer transform rotate-180 border rounded text-green-400 hover:bg-green-400 hover:text-white border-green-400 px-2 py-5 my-8"
         >
           Github
-        </p>
-        <p
+        </a>
+        <a
           v-if="isRendered"
           :key="3"
-          class="cursor-pointer transform rotate-180 border rounded border-green-400 px-2 py-5 mb-8 mt-24"
+          target="_blank"
+          href="mailto:kionkaimi@gmail.com"
+          class="cursor-pointer transform rotate-180 border rounded text-green-400 hover:bg-green-400 hover:text-white border-green-400 px-2 py-5 mb-8 mt-24"
         >
           Email
-        </p>
+        </a>
       </XyzTransitionGroup>
       <XyzTransition
         appear
@@ -33,7 +39,7 @@
         class=""
       >
         <div class="flex flex-col lg:col-start-2 lg:ml-32 col-span-4">
-          <div>
+          <div class="flex flex-col">
             <h1 class="lg:header mobile-header leading-none">
               I'm <span class="text-green-400">
                 Kion Kaimi
@@ -47,35 +53,45 @@
             xyz="fade ease-out-back up-5 stagger delay-5"
             class="grid grid-cols-3 gap-6 lg:hidden mb-12"
           >
-            <p
+            <a
               v-if="isRendered"
               :key="1"
-              class="cursor-pointer border rounded border-green-400 py-2 mt-8 text-center"
+              target="_blank"
+              href="https://www.linkedin.com/in/kion-kaimi/"
+              class="cursor-pointer border rounded text-green-400 hover:bg-green-400 hover:text-white border-green-400 py-2 mt-8 text-center"
             >
               LinkedIn
-            </p>
-            <p
+            </a>
+            <a
               v-if="isRendered"
               :key="2"
-              class="cursor-pointer border rounded border-green-400 py-2 mt-8 text-center"
+              target="_blank"
+              href="https://github.com/akuamakana/"
+              class="cursor-pointer border rounded text-green-400 hover:bg-green-400 hover:text-white border-green-400 py-2 mt-8 text-center"
             >
               Github
-            </p>
-            <p
+            </a>
+            <a
               v-if="isRendered"
               :key="3"
-              class="cursor-pointer border rounded border-green-400 py-2 mt-8 text-center"
+              target="_blank"
+              href="mailto:kionkaimi@gmail.com"
+              class="cursor-pointer border rounded text-green-400 hover:bg-green-400 hover:text-white border-green-400 py-2 mt-8 text-center"
             >
               Email
-            </p>
+            </a>
           </XyzTransitionGroup>
           <div class="lg:mt-24 lg:pt-24">
             <p class="leading-relaxed mb-6 text-lg text-gray-600">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet modi ea excepturi eum? Ipsam atque enim vel, consectetur ipsum ipsa obcaecati. Modi natus nulla voluptatibus, in est facilis molestiae iure optio vel quidem quisquam mollitia magnam fugiat assumenda aliquam eum, molestias minima ipsum iusto! Quae ut tempore labore! Suscipit ipsum dignissimos veniam omnis nulla inventore laborum ex repudiandae eos modi, voluptatibus provident et esse dolore necessitatibus doloribus animi dolores quod atque quo cum! Nisi nesciunt aperiam, odio rem incidunt voluptate!
+              Software developer with over 5 years of experience in IT support. <br> Seeking opportunities in the development field to apply my skills and mastery of google-fu.
             </p>
-            <button class="text-xl bg-green-400 rounded-lg py-3 text-white px-10 cursor-pointer">
+            <a
+              href="~/assets/docs/Kion Kaimi Resume.docx"
+              download
+              class="text-xl bg-green-400 rounded-lg py-3 text-white px-10 cursor-pointer"
+            >
               Download CV
-            </button>
+            </a>
           </div>
         </div>
       </XyzTransition>

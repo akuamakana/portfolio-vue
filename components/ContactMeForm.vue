@@ -1,5 +1,7 @@
 <template>
   <form
+    method="POST"
+    action="https://formspree.io/kionkaimi@gmail.com"
     class="flex flex-col flex-auto"
   >
     <input
@@ -24,7 +26,7 @@
     />
     <button
       class="bg-green-400 p-3 rounded-lg mt-4 text-white focus:ring-0"
-      type="button"
+      type="submit"
     >
       Send Message
     </button>

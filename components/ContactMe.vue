@@ -13,7 +13,7 @@
         <div class="p-8 shadow-lg col-span-3">
           <contact-me-form />
         </div>
-        <div class="lg:flex flex-row hidden lg:grid lg:grid-rows-4 gap-8 lg:col-span-1">
+        <div class=" flex-row hidden lg:grid lg:grid-rows-4 gap-8 lg:col-span-1">
           <contact-card />
           <contact-card />
           <contact-card />

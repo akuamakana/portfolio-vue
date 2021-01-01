@@ -1,9 +1,9 @@
 <template>
   <div
     id="app"
-    class="font-sans antialiased w-screen flex justify-end lg:justify-center"
+    class="font-sans antialiased w-screen flex justify-end sticky top-0 bg-white lg:justify-center"
   >
-    <nav class="flex lg:w-3/4 items-center justify-center flex-wrap p-6">
+    <nav class="flex w-screen items-center justify-center flex-wrap p-6">
       <!-- Hide button on  -->
       <div class="block sm:hidden">
         <button
@@ -22,7 +22,7 @@
       </div>
       <div
         :class="open ? 'block' : 'hidden'"
-        class="w-full justify-end flex-grow sm:flex sm:items-center sm:w-auto"
+        class="w-full justify-end lg:mr-24 flex-grow sm:flex sm:items-center sm:w-auto"
       >
         <div class="flex flex-col md:hidden justify-end sm:flex-grow">
           <a
