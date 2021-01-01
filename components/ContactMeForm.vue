@@ -8,7 +8,7 @@
   >
     <input
       type="hidden"
-      name="formn-name"
+      name="form-name"
       value="contact-me"
     >
     <input
