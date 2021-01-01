@@ -3,7 +3,14 @@
     method="POST"
     data-netlify="true"
     class="flex flex-col flex-auto"
+    data-netlify-honeypot="bot-field"
+    name="contact-me"
   >
+    <input
+      type="hidden"
+      name="form-name"
+      value="ask-question"
+    >
     <input
       class="my-4 p-2 border-gray-200 border-2 rounded-lg"
       type="text"
@@ -30,7 +37,6 @@
     />
     <button
       class="bg-green-400 p-3 rounded-lg mt-4 text-white focus:ring-0"
-      type="submit"
     >
       Send Message
     </button>
