@@ -1,27 +1,31 @@
 <template>
   <form
     method="POST"
-    action="https://formspree.io/kionkaimi@gmail.com"
+    data-netlify="true"
     class="flex flex-col flex-auto"
   >
     <input
       class="my-4 p-2 border-gray-200 border-2 rounded-lg"
       type="text"
+      name="name"
       placeholder="Name"
     >
     <input
       class="my-4 p-2 border-gray-200 border-2 rounded-lg"
-      type="text"
+      type="email"
+      name="email"
       placeholder="Email"
     >
     <input
       class="my-4 p-2 border-gray-200 border-2 rounded-lg"
       type="text"
+      name="subject"
       placeholder="Subject"
     >
     <textarea
       class="my-4 p-2 border-gray-200 border-2 rounded-lg"
       rows="5"
+      name="message"
       style="resize: none"
     />
     <button
