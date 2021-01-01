@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen flex justify-center py-8">
+  <div id="resume" class="w-screen flex justify-center py-8">
     <div class="lg:w-3/4 flex-auto px-4 lg:flex-none lg:p-0">
       <div>
         <h1 class="text-lg">

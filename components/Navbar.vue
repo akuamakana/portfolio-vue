@@ -26,25 +26,29 @@
       >
         <div class="flex flex-col md:hidden justify-end sm:flex-grow">
           <a
-            href="#responsive-header"
+            v-scroll-to="{el: '#intro', offset: -200}"
+            href="#"
             class="no-underline block mt-4 sm:inline-block sm:mt-0 hover:text-white mr-4"
           >
             Home
           </a>
           <a
-            href="#responsive-header"
-            class="no-underline block mt-4 sm:inline-block sm:mt-0 hover:text-white mr-4"
-          >
-            Resume
-          </a>
-          <a
-            href="#responsive-header"
+            v-scroll-to="'#portfolio'"
+            href="#"
             class="no-underline block mt-4 sm:inline-block sm:mt-0 hover:text-white"
           >
             Portfolio
           </a>          
           <a
-            href="#responsive-header"
+            v-scroll-to="{el: '#resume', offset: -200}"
+            href="#"
+            class="no-underline block mt-4 sm:inline-block sm:mt-0 hover:text-white mr-4"
+          >
+            Resume
+          </a>
+          <a
+            v-scroll-to="'#contact-me'"
+            href="#"
             class="no-underline block mt-4 sm:inline-block sm:mt-0 hover:text-white"
           >
             Contact
@@ -55,34 +59,42 @@
           tag="div"
           class="sm:flex items-center justify-center hidden"
         >
-          <p
+          <a
             v-if="isRendered"
             :key="1"
+            v-scroll-to="{el: '#intro', offset: -200}"
+            href="#"
             class="mx-8 text-xl text-gray-600"
           >
             Home
-          </p>
-          <p
-            v-if="isRendered"
-            :key="2"
-            class="mx-8 text-xl text-gray-600"
-          >
-            Resume
-          </p>
-          <p
+          </a>
+          <a
             v-if="isRendered"
             :key="3"
+            v-scroll-to="'#portfolio'"
+            href="#"
             class="mx-8 text-xl text-gray-600"
           >
             Portfolio
-          </p>
-          <p
+          </a>
+          <a
+            v-if="isRendered"
+            :key="2"
+            v-scroll-to="{el: '#resume', offset: -200}"
+            href="#"
+            class="mx-8 text-xl text-gray-600"
+          >
+            Resume
+          </a>
+          <a
             v-if="isRendered"
             :key="4"
+            v-scroll-to="'#contact-me'"
+            href="#"
             class="ml-4 text-xl bg-green-400 rounded-lg py-3 text-white px-10 cursor-pointer"
           >
             Contact
-          </p>
+          </a>
         </XyzTransitionGroup>
       </div>
     </nav>

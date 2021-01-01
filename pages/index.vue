@@ -6,6 +6,7 @@
     <!-- <AboutMe /> -->
     <resume />
     <contact-me />
+    <Footer />
   </div>
 </template>
 
@@ -16,8 +17,9 @@ import AboutMe from '~/components/AboutMe';
 import Resume from '~/components/Resume';
 import Portfolio from '~/components/Portfolio';
 import ContactMe from '~/components/ContactMe';
+import Footer from '~/components/Footer';
 export default {
-  components: Intro, Navbar, AboutMe, Resume, Portfolio, ContactMe
+  components: Intro, Navbar, AboutMe, Resume, Portfolio, ContactMe, Footer
 };
 </script>
 

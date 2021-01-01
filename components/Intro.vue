@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen flex justify-center items-center">
+  <div id="intro" class="w-screen flex justify-center items-center">
     <div class="h-screen w-screen flex flex-col px-4 lg:px-0 lg:grid lg:grid-cols-6 grid-rows-2 lg:pt-20">
       <XyzTransitionGroup
         xyz="fade ease-out-back left-5 stagger delay-10"

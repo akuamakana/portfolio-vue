@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-screen justify-center my-8 lg:mt-40">
+  <div id="portfolio" class="flex w-screen justify-center my-8 lg:mt-40">
     <div class="lg:w-3/4 flex-auto px-4 lg:flex-none lg:p-0">
       <div>
         <h1 class="text-lg">
