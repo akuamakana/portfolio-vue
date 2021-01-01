@@ -36,5 +36,6 @@ export default {
 
   colorMode: {
     classSuffix: ''
-  }
+  },
+  target: 'static'
 };
