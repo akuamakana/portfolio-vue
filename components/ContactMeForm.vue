@@ -5,12 +5,11 @@
     class="flex flex-col flex-auto"
     data-netlify-honeypot="bot-field"
     name="contact-me"
-    @submit.prevent="handleSubmit"
   >
     <input
       type="hidden"
-      name="form-name"
-      value="ask-question"
+      name="contact-me"
+      value="contact-me"
     >
     <input
       v-model="form.name"
