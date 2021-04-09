@@ -1,6 +1,8 @@
 <template>
   <div id="intro" class="w-screen flex justify-center items-center">
-    <div class="h-screen w-screen flex flex-col px-4 lg:px-0 lg:grid lg:grid-cols-6 grid-rows-2 lg:pt-20">
+    <div
+      class="h-screen w-screen flex flex-col px-4 lg:px-0 lg:grid lg:grid-cols-6 grid-rows-2 lg:pt-20"
+    >
       <XyzTransitionGroup
         xyz="fade ease-out-back left-5 stagger delay-10"
         class="col-span-1 col-start-1 social hidden lg:flex flex-row-reverse items-start justify-end"
@@ -33,15 +35,12 @@
           Email
         </a>
       </XyzTransitionGroup>
-      <XyzTransition
-        appear
-        xyz="fade"
-        class=""
-      >
+      <XyzTransition appear xyz="fade" class="">
         <div class="flex flex-col lg:col-start-2 lg:ml-32 col-span-4">
           <div class="flex flex-col">
             <h1 class="lg:header mobile-header leading-none">
-              I'm <span class="text-green-400">
+              I'm
+              <span class="text-green-400">
                 Kion Kaimi
               </span>
             </h1>
@@ -83,11 +82,15 @@
           </XyzTransitionGroup>
           <div class="lg:mt-24 lg:pt-24">
             <p class="leading-relaxed mb-6 text-lg text-gray-600">
-              Software developer with over 5 years of experience in IT support. <br> Seeking opportunities in the development field to apply my skills and mastery of google-fu.
+              Software developer with over 5 years of experience in IT support.
+              <br />
+              Seeking opportunities in the development field to apply my skills
+              and mastery of google-fu.
             </p>
             <a
-              href="~/assets/docs/Kion Kaimi Resume.docx"
+              href="/assets/docs/Kion-Kaimi-Resume.docx"
               download
+              target="_blank"
               class="text-xl bg-green-400 rounded-lg py-3 text-white px-10 cursor-pointer"
             >
               Download CV
@@ -116,10 +119,10 @@
 </template>
 
 <script>
-import { hideAt } from 'vue-breakpoints';
+import { hideAt } from "vue-breakpoints";
 export default {
   components: hideAt,
-  data () {
+  data() {
     return {
       isRendered: false
     };
@@ -130,16 +133,14 @@ export default {
 };
 </script>
 
-
 <style scoped>
-  .social {
-    writing-mode: tb-rl;
-  }
-  .header {
-    font-size: 6rem;
-  }
-  .mobile-header {
-    font-size: 5rem;
-  }
-
+.social {
+  writing-mode: tb-rl;
+}
+.header {
+  font-size: 6rem;
+}
+.mobile-header {
+  font-size: 5rem;
+}
 </style>

@@ -9,11 +9,25 @@
           Who Am I
         </h2>
         <p class="leading-relaxed mb-6 text-lg">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet modi ea excepturi eum? Ipsam atque enim vel, consectetur ipsum ipsa obcaecati. Modi natus nulla voluptatibus, in est facilis molestiae iure optio vel quidem quisquam mollitia magnam fugiat assumenda aliquam eum, molestias minima ipsum iusto! Quae ut tempore labore! Suscipit ipsum dignissimos veniam omnis nulla inventore laborum ex repudiandae eos modi, voluptatibus provident et esse dolore necessitatibus doloribus animi dolores quod atque quo cum! Nisi nesciunt aperiam, odio rem incidunt voluptate!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet modi
+          ea excepturi eum? Ipsam atque enim vel, consectetur ipsum ipsa
+          obcaecati. Modi natus nulla voluptatibus, in est facilis molestiae
+          iure optio vel quidem quisquam mollitia magnam fugiat assumenda
+          aliquam eum, molestias minima ipsum iusto! Quae ut tempore labore!
+          Suscipit ipsum dignissimos veniam omnis nulla inventore laborum ex
+          repudiandae eos modi, voluptatibus provident et esse dolore
+          necessitatibus doloribus animi dolores quod atque quo cum! Nisi
+          nesciunt aperiam, odio rem incidunt voluptate!
         </p>
-        <button class="text-xl bg-green-400 rounded-lg py-3 text-white px-10 cursor-pointer">
+        <!-- <form method="get" action="~/assets/docs/kion-kaimi-resume.docx"> -->
+        <a
+          href="assets/docs/kion-kaimi-resume.docx"
+          download="Kion Kaimi Resume"
+          class="text-xl bg-green-400 rounded-lg py-3 text-white px-10 cursor-pointer"
+        >
           Download CV
-        </button>
+        </a>
+        <!-- </form> -->
       </div>
     </div>
   </div>
