@@ -1,5 +1,8 @@
 <template>
-  <div id="portfolio" class="flex w-screen justify-center my-8 lg:mt-40">
+  <div
+    id="portfolio"
+    class="flex w-screen justify-center my-8 lg:mt-40"
+  >
     <div class="lg:w-3/4 flex-auto px-4 lg:flex-none lg:p-0">
       <div>
         <h1 class="text-lg">
@@ -26,30 +29,32 @@ export default {
   components: PortfolioCard,
   data() {
     return {
-      projects: [ {
-        title: 'Portfolio',
-        image: 'portfolio',
-        gitLink: 'https://github.com/akuamakana/portfolio-vue',
-        liveLink: 'https://www.kionkaimi.com'
-      },
-      {
-        title: 'Recipe App',
-        image: 'recipes',
-        gitLink: 'https://github.com/akuamakana/recipe-app',
-        liveLink: 'https://kion-recipes-app.netlify.app/'
-      },
-      {
-        title: 'BMR & Macro Calculator',
-        image: 'bmr',
-        gitLink: 'https://github.com/akuamakana/bmr-macro-calculator',
-        liveLink: 'https://bmr-macro-calculator.netlify.app/'
-      },
-      {
-        title: 'Pin Kaow Thai Restaurant',
-        image: 'restaurant',
-        gitLink: 'https://github.com/akuamakana/restaurant',
-        liveLink: 'https://pinkaow-restaurant.netlify.app/'
-      } ]
+      projects: [ 
+        {
+          title: 'Workout Buddy',
+          image: 'workout-buddy',
+          gitLink: 'https://github.com/akuamakana/workout-tracker/tree/master',
+          liveLink: 'https://workout-buddy.netlify.app/'
+        },
+        {
+          title: 'Recipe App',
+          image: 'recipes',
+          gitLink: 'https://github.com/akuamakana/recipe-app',
+          liveLink: 'https://kion-recipes-app.netlify.app/'
+        },
+        {
+          title: 'Pin Kaow Thai Restaurant',
+          image: 'restaurant',
+          gitLink: 'https://github.com/akuamakana/restaurant',
+          liveLink: 'https://pinkaow-restaurant.netlify.app/'
+        }, 
+        {
+          title: 'BMR & Macro Calculator',
+          image: 'bmr',
+          gitLink: 'https://github.com/akuamakana/bmr-macro-calculator',
+          liveLink: 'https://bmr-macro-calculator.netlify.app/'
+        }
+      ]
     };
   }
 };
